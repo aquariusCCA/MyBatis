@@ -20,6 +20,34 @@
               "icon": "lucide-file",
               "title": "MyBatis 課程描述"
             }
+          },
+          {
+            "id": "d6737b6f2369d1de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "和其它持久化层技术对比.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "和其它持久化层技术对比"
+            }
+          },
+          {
+            "id": "870735d15f46a3e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyBatis 原始課件/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
           }
         ]
       }
@@ -183,21 +211,26 @@
   },
   "active": "8cecbcdf3e059c0a",
   "lastOpenFiles": [
+    "和其它持久化层技术对比.md",
+    "MyBatis 原始課件/README.md",
     "MyBatis 課程描述.md",
-    "未命名",
-    "MyBatis/Resources/默认的类型别名2.png",
-    "MyBatis/Resources/默认的类型别名1.png",
-    "MyBatis/Resources/配置分页插件.png",
-    "MyBatis/Resources/逆向执行结果.png",
-    "MyBatis/Resources/插件中的驱动.png",
-    "MyBatis/Resources/延迟加载测试3.png",
-    "MyBatis/Resources/执行MBG插件的generate目标.png",
-    "MyBatis/Resources/延迟加载测试2.png",
-    "MyBatis/Resources/延迟加载测试1.png",
-    "MyBatis/Resources/增删改测试结果2.png",
-    "MyBatis/Resources",
+    "Mybatis 简介/MyBatis 下载.md",
+    "Mybatis 简介/MyBatis 特性.md",
+    "MyBatis 原始課件/Resources/默认的类型别名2.png",
+    "MyBatis 原始課件/Resources/默认的类型别名1.png",
+    "MyBatis 原始課件/Resources/配置分页插件.png",
+    "MyBatis 原始課件/Resources/逆向执行结果.png",
+    "MyBatis 原始課件/Resources/插件中的驱动.png",
+    "MyBatis 原始課件/Resources/执行MBG插件的generate目标.png",
+    "MyBatis 原始課件/Resources/延迟加载测试3.png",
+    "MyBatis 原始課件/Resources/延迟加载测试2.png",
+    "MyBatis 原始課件/Resources/延迟加载测试1.png",
+    "MyBatis 原始課件/Resources/增删改测试结果2.png",
+    "MyBatis 原始課件/Resources",
     "MyBatis/MyBatis笔记.md",
-    "MyBatis",
+    "Mybatis 简介/MyBatis 历史.md",
+    "Mybatis 简介",
+    "MyBatis 原始課件",
     "SpringMVC 执行流程/SpringMVC 执行流程.md",
     "SpringMVC 执行流程/DispatcherServlet 调用组件处理请求.md",
     "Spring MVC 課程描述.md",
@@ -224,11 +257,6 @@
     "拦截器/拦截器的配置.md",
     "拦截器/拦截器的三个抽象方法.md",
     "HttpMessageConverter/文件上传.md",
-    "HttpMessageConverter/ResponseEntity.md",
-    "HttpMessageConverter/文件下载.md",
-    "HttpMessageConverter/HttpMessageConverter.md",
-    "HttpMessageConverter/@ResponseBody.md",
-    "HttpMessageConverter/RequestEntity.md",
     "未命名 2.canvas",
     "未命名.canvas"
   ]
