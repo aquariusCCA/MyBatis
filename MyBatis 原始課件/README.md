@@ -709,6 +709,9 @@ List<User> getUserByTable(@Param("tableName") String tableName);
     -   useGeneratedKeys：设置使用自增的主键
     *   keyProperty：因为增删改有统一的返回值是受影响的行数，因此只能将获取的自增的主键放在传输的参数 user 对象的某个属性中
 
+```
+```
+
 ```java
 /**
  * 添加用户信息
@@ -867,9 +870,13 @@ Emp getEmpAndDeptByStepOne(@Param("eid") Integer eid);
 	<result property="age" column="age"></result>
 	<result property="sex" column="sex"></result>
 	<result property="email" column="email"></result>
-	<association property="dept"
-				 select="com.atguigu.mybatis.mapper.DeptMapper.getEmpAndDeptByStepTwo"
-				 column="did"></association>
+	<association
+		property="dept"
+		select="com.atguigu.mybatis.mapper.DeptMapper.getEmpAndDeptByStepTwo"
+		column="did"
+		fetchType="eager"
+ .  >		
+	</association>
 </resultMap>
 <!--Emp getEmpAndDeptByStepOne(@Param("eid") Integer eid);-->
 <select id="getEmpAndDeptByStepOne" resultMap="empAndDeptByStepResultMap">
@@ -881,14 +888,11 @@ Emp getEmpAndDeptByStepOne(@Param("eid") Integer eid);
 
 ```java
 //DeptMapper里的方法
-/**
- * 通过分步查询，员工及所对应的部门信息
- * 分步查询第二步：通过did查询员工对应的部门信息
- * @param
- * @return com.atguigu.mybatis.pojo.Emp
- * @date 2022/2/27 20:23
- */
-Dept getEmpAndDeptByStepTwo(@Param("did") Integer did);
+/**  
+ * 通过分步查询部门以及部门中所有的员工信息  
+ * 分步查询第二步：根据did查询员工信息  
+ */  
+List<Emp> getDeptAndEmpByStepTwo(@Param("did") Integer did);
 ```
 
 ```xml
@@ -897,6 +901,7 @@ Dept getEmpAndDeptByStepTwo(@Param("did") Integer did);
 	<id property="did" column="did"></id>
 	<result property="deptName" column="dept_name"></result>
 </resultMap>
+
 <!--Dept getEmpAndDeptByStepTwo(@Param("did") Integer did);-->
 <select id="getEmpAndDeptByStepTwo" resultMap="EmpAndDeptByStepTwoResultMap">
 	select * from t_dept where did = #{did}
