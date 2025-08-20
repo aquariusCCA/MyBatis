@@ -53,5 +53,12 @@
 		- [[collection]]
 		- [[一对多映射处理 - 分步查询]]
 	- [[延迟加载]]
+- [[动态 SQL]]
+	- [[if]]
+	- [[where]]
+	- [[trim]]
+	- [[choose、when、otherwise]]
+	- [[foreach]]
+	- [[SQL 片段]]
 
 ---
