@@ -60,5 +60,15 @@
 	- [[choose、when、otherwise]]
 	- [[foreach]]
 	- [[SQL 片段]]
+- **MyBatis 的缓存**
+	- [[MyBatis 的一级缓存]]
+	- [[MyBatis 的二级缓存]]
+	- [[二级缓存的相关配置]]
+	- [[MyBatis 缓存查询的顺序]]
+	- [[整合第三方缓存 EHCache]]
+- [[MyBatis 的逆向工程]]
+	- [[创建逆向工程的步骤]]
+- **分页插件**
+- 
 
 ---
