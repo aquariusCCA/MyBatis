@@ -140,7 +140,8 @@ public interface UserMapper {
     -   mapper 接口的全类名和映射文件的命名空间（namespace）保持一致
     -   mapper 接口中方法的方法名和映射文件中编写 SQL 的标签的 id 属性保持一致
 
-```xml
+
+```
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -537,13 +538,13 @@ List<User> getUserList();
  * 例如：int-->_int|_integer
  * 例如：Map-->map,List-->list
  */
-int getCount();
+Integer getCount();
 ```
 
 ```xml
-<!--int getCount();-->
-<select id="getCount" resultType="_integer">
-	select count(id) from t_user
+    <!-- Integer getCount(); -->
+    <select id="getCount" resultType="java.lang.Integer">
+        select count(1) from t_user
 </select>
 ```
 
