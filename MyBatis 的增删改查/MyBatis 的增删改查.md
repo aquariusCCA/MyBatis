@@ -8,7 +8,8 @@ up:
 /**  
  * 對應表：t_user  
  * 注意：sex = 1(男), 2(女)  
- */@Data  
+ */
+@Data  
 @NoArgsConstructor  
 @AllArgsConstructor  
 public class User implements Serializable {  
